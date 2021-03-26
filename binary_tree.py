@@ -1,7 +1,8 @@
 """
 -zlozonosc obliczeniowa O(logn)
 -szukamy srodka
--najwydajniejszy
+-znacznie szybsze od wyszukiwania prostegomu mierzy się podając tępo zwiekszania
+się pracy wraz z przysrostem liczby danych
 """
 import random
 #generating example list
