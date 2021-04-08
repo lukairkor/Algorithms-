@@ -1,7 +1,8 @@
 """
+-Binary Tree Search
 -zlozonosc obliczeniowa O(logn)
 -szukamy srodka
--znacznie szybsze od wyszukiwania prostegomu mierzy się podając tępo zwiekszania
+-znacznie szybsze od wyszukiwania prostego mierzy się podając tępo zwiekszania
 się pracy wraz z przysrostem liczby danych
 """
 import random

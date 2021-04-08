@@ -1,0 +1,3 @@
+BST Binary search - ok
+DFS - ok
+BFS - 
