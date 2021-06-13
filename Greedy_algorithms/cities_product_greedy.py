@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Jun 12 20:33:09 2021
+- Problem NP - zupelny (jak rozpoznac?)
 - set cover problem
+- aproximation algorithm
 - where should I go to buy all products and visit little places?
 @author: lukas
 """
