@@ -8,9 +8,29 @@ Created on Mon Jun 14 21:14:30 2021
 @author: lukas
 """
 
-products = {}
-products["water"] = 
-products["book"] =
-products["food"] =
-products["jacket"] =
-products["camera"] =
+# products = {}
+# products["water"] = 
+# products["book"] =
+# products["food"] =
+# products["jacket"] =
+# products["camera"] =
+
+def knapSack(knap_capac, weight, value, capac_parts):
+    dp = [0 for i in range(knap_capac + 1)]  # zero filled empty knapsack
+
+    for i in range(1, capac_parts + 1):  # first our element value (from 6)
+        for w in range(knap_capac, 0, -1):  # 
+            if weight[i-1] <= w:
+                # finding the maximum value
+                dp[w] = max(dp[w], dp[w-weight[i-1]] + value[i-1])
+ 
+    return dp[knap_capac]  # returning the maximum value of knapsack
+ 
+ 
+# Driver code
+value = [10, 3, 3, 5, 6] # items values
+weight = [3, 1, 2, 2, 1] # items weight
+knap_capac = 6 # knapsack capacity
+capac_parts = len(value) # how many values
+print(knapSack(knap_capac, weight, value, capac_parts))
+ 
