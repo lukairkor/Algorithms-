@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Apr  9 00:19:37 2021
--created 2500 years ago
--Greatest common divisor
+ 
 @author: lukas
 """
 a = 12
