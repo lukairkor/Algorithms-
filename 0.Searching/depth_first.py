@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun May 23 20:58:59 2021
-
+- depth First
 @author: lukas
 """
 

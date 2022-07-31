@@ -1,11 +1,13 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
--BFS breadth first search - przeszukiwanie grafu/drzewo
--zastosowanie kolejki
--szukanie najkrotszej drogi
--czy graf jest spojny
+- BFS breadth first search 
+- queue implementation
+- looking for shortest path
+- czy graf jest spojny
 """
 from collections import deque
+
 
 def person_is_seler(name):
     return name[-1] == 'm'
@@ -24,7 +26,8 @@ def check(name):
                 serch_que += graf[person]
                 searched.append(person)
     return False
-        
+
+
 if __name__ == "__main__":
     graf = {}
     graf["ja"] = ["Michal", "Tomek", "Joannam"]
@@ -37,5 +40,4 @@ if __name__ == "__main__":
 
     print(graf)
     print(check("ja"))
-    
     
