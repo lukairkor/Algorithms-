@@ -7,8 +7,9 @@
 - widely used
 - when input size larger than RAM size
 - for sorting linked list
-- for inversion count problem
+- for an inversion count problem
 """
+
 
 def merg_sort(mer_arr):
     """Merge sorting function"""
@@ -29,7 +30,7 @@ def merg_sort(mer_arr):
 
         i = j = k = 0
 
-        # while left and right have single element
+        # while left and right have a single element
         while i < len(arr_left) and j < len(arr_right):
             # check with number is greater
             if arr_left[i] < arr_right[j]:
@@ -41,7 +42,7 @@ def merg_sort(mer_arr):
                 mer_arr[k] = arr_right[j]
                 j += 1
             k += 1
-        # check second array
+        # check a second array
         while i < len(arr_left):
             mer_arr[k] = arr_left[i]
             i += 1
@@ -57,4 +58,3 @@ if __name__ == '__main__':
     arr = [3, 1, 8, 6, 2]
     merg_sort(arr)
     print(arr)
-    

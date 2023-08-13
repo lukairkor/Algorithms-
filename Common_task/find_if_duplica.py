@@ -6,6 +6,6 @@ Created on Fri Jul 22 23:10:18 2022
 @author: lukas
 """
 
-l = [1, 2, 3, 4, 2, 4]
+ll = [1, 2, 3, 4, 2, 4]
 
-print(2 in l)
+print(2 in ll)

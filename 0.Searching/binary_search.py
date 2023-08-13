@@ -9,9 +9,10 @@ się pracy wraz z przysrostem liczby danych
 """
 import random
 
-#generating example list
+
+# generating an example list
 def list_gen():
-    '''generating list'''
+    """generating list"""
     lis = []
     step = random.randrange(1, 4, 1)
     for i in range(0, 1000, step):
@@ -19,9 +20,10 @@ def list_gen():
     # print(lista)
     return lis
 
-#binary search algorithm
+
+# binary search algorithm
 def binary_tree(searched, lis):
-    '''search algorithm function'''
+    """search algorithm function"""
     begin = 0
     end = len(lis) - 1
     while begin <= end:

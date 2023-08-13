@@ -5,8 +5,9 @@ Time complexity: O(N)
 Auxiliary Space: O(1)
 """
 
+
 def lin_search(lis, res):
-    '''linear search function'''
+    """linear search function"""
     for i, elem in enumerate(lis):
         if elem == res:
             return "on position: ", i

@@ -6,13 +6,9 @@
 """
 from collections import deque
 serch_que = deque()
-slownik = {}
+slownik = {"Michal": ["Jan"], "Tomek": ["Alicja"], "Joanna": ["Jakub"], "Krzysztof": ["Marek"],
+           "ja": ["Michal", "Tomek", "Joanna", "Krzysztof"]}
 
-slownik["Michal"] = ["Jan"]
-slownik["Tomek"] = ["Alicja"]
-slownik["Joanna"] = ["Jakub"]
-slownik["Krzysztof"] = ["Marek"]
-slownik["ja"] = ["Michal", "Tomek", "Joanna", "Krzysztof"]
 # print(slownik["ja"])
 
 czy_juz_jest = slownik.get("Michal")
@@ -20,4 +16,3 @@ czy_juz_jest = slownik.get("Michal")
 
 serch_que += slownik["ja"]
 print(serch_que)
-

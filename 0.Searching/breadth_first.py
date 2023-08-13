@@ -12,13 +12,14 @@ from collections import deque
 def person_is_seler(name):
     return name[-1] == 'm'
 
+
 def check(name):
     serch_que = deque()
     serch_que += graf[name]
-    searched = [] #checked before
+    searched = []  # checked before
     while serch_que:
         person = serch_que.popleft()
-        if not person in searched: # did whe checked it before
+        if not person in searched:  # did whe check it before
             if person_is_seler(person):
                 print(person + " sprzedaje mango!")
                 return True
@@ -29,15 +30,8 @@ def check(name):
 
 
 if __name__ == "__main__":
-    graf = {}
-    graf["ja"] = ["Michal", "Tomek", "Joannam"]
-    graf["Michal"] = ["Jan"]
-    graf["Tomek"] = ["Alicja"]
-    graf["Joannam"] = ["Jakub"]
-    graf["Jan"] = []
-    graf["Alicja"] = []
-    graf["Jakub"] = []
+    graf = {"ja": ["Michal", "Tomek", "Joanna"], "Michal": ["Jan"], "Tomek": ["Alicja"], "Joanna": ["Jakub"],
+            "Jan": [], "Alicja": [], "Jakub": []}
 
     print(graf)
     print(check("ja"))
-    

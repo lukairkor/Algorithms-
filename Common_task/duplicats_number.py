@@ -6,14 +6,14 @@ Created on Fri Jul 22 23:12:01 2022
 @author: lukas
 """
 
+lis = [1, 2, 2, 3, 1]
 
-l = [1, 2, 2, 3, 1]
 
-def dup_number(l):
+def dup_number(ll):
     # creating sets
     dup, seen = set(), set()
     # iterating over our list
-    for ele in l:
+    for ele in ll:
         # if number in seen add to dup
         if ele in seen:
             dup.add(ele)
@@ -22,5 +22,5 @@ def dup_number(l):
     return list(dup)
 
 
-l = dup_number(l)
-print(l)
+lis = dup_number(lis)
+print(lis)

@@ -9,6 +9,7 @@ Created on Fri Jul 22 23:17:20 2022
 a = "bark"
 b = "krab"
 
+
 def is_anagram(a, b):
     # check if equal number of characters
     # eliminate duplicates
@@ -16,5 +17,6 @@ def is_anagram(a, b):
         print("are anagrams")
     else:
         print("are not anagrams")
-            
-is_anagram(a, b)            
+
+
+is_anagram(a, b)
